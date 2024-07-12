@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/media-query.css">
+    <title>Menu Responsivo Media Query</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Thiago Almada</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="https://ge.globo.com/rj/futebol/campeonato-carioca/" target="_blank">Campeonato Carioca</a></li>
+                <li><a href="https://ge.globo.com/futebol/copa-do-brasil/" target="_blank">Copa do Brasil</a></li>
+                <li><a href="https://ge.globo.com/futebol/brasileirao-serie-a/" target="_blank">Campeonato Brasileiro</a></li>
+                <li><a href="https://ge.globo.com/futebol/copa-sul-americana/" target="_blank">Sulameircana</a></li>
+                <li><a href="https://ge.globo.com/futebol/libertadores/" target="_blank">Libertadores da América</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        
+        <article>
+            <img src="imagens/thiago-almada.jpg" alt="imagem site botafogo">    
+            <h2>Contratação mais cara do Botafogo </h2>
+            <p>Thiago Almada poderia deixar simplesmente para depois,
+               afinal a sua primeira passagem pelo Botafogo é curtíssima,
+               já que terá logo que se apresentar a seleção argentina para
+               a disputa dos Jogos Olímpicos de Paris-2024. Mas,
+               mesmo visivelmente tímido e ainda se aclimatando,
+               mostrou bastante interesse pelo Glorioso.
+            </p>
+
+            <p>O Boletim do C.E, do FogãoNET, apurou que a contratação
+               mais cara da história do futebol brasileiro chamou atenção
+               pela sua educação nos bastidores. Além de tratar todos bem
+               no dia a dia do clube, o meia-atacante perguntou sobre
+               tudo e parecia querer entender cada detalhe a respeito
+               dos novos companheiros de elenco e do centro de treinamento.
+            </p>
+
+            <p>Já no Espaço Lonier, Thiago Almada participou dos primeiros
+               treinos com bola com os demais jogadores do plantel alvinegro.
+               Um dos destaques foi sua presença no treino de cobranças de
+               falta ao lado dos estrangeiros Jefferson Savarino, Matías Segovia,
+               Óscar Romero e Diego Hernández, com quem naturalmente mais se
+               ambientou logo de cara por causa do idioma. E, na primeira
+               atividade, mostrou já chegar do Atlanta United com o pé
+               direito calibrado e se credenciando a ser uma das principais
+               opções para bola parada do time comandando pelo técnico
+               Artur Jorge.
+            </p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+
+        }
+
+    </script>
+    <footer>
+        <a href="https://github.com/cristianosgpereira" target="_blank"><p>Site Criado Por Cristiano Pereira de Souza</p></a>
+    </footer>
+    
+</body>
+</html>

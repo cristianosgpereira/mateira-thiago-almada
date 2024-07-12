@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body, html {
+
+    background-color: lightgray;
+    background: url(../imagens/camp\ 3.jpg) no-repeat center fixed;
+    background-size: cover;
+    
+    
+}   
+
+header {
+    background-color: rgb(148, 148, 148);
+}
+
+header > h1 {
+    font-size: 3em;
+    padding: 10px;
+    text-align: center;
+}
+
+header > h1:hover {
+    cursor: pointer;
+    color: white;
+
+} 
+
+
+i#burguer {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+i#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-top: 2px solid gray;
+
+}
+
+menu > ul > li > a:hover {
+    background-color: gray;
+} 
+
+main {
+    width: 50vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img {
+    
+    width: 100%;
+
+}
+
+article > h2 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+article > p {
+    
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+
+footer {
+    margin: 0px;
+    background-color: gray;
+    padding: 1px;
+    text-align: center;    
+    position: fixed;
+    width: 100%;
+    bottom: 0;    
+}
+
+footer:hover {
+    background-color: rgb(87, 87, 87);
+}
+
+footer > a{
+    text-decoration: none;
+    color: black;
+}
+
+footer > a:hover {
+    
+    color: rgb(205, 205, 223);
+    cursor: pointer;
+    text-decoration: underline;    
+
+}
